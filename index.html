@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ميوزك ستور — متجرك الأول لمنتجات تيليجرام: حسابات موثوقة، اشتراكات بريميوم، نجوم، هدايا NFT، وأسماء مستخدمين مميزة. تسليم فوري ودعم 24/7.">
+<meta property="og:title" content="ميوزك ستور | حسابات وهدايا تيليجرام">
+<meta property="og:description" content="حسابات تيليجرام، بريميوم، نجوم وهدايا NFT — تسليم فوري وضمان كامل.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b1020">
+<title>ميوزك ستور | حسابات وهدايا تيليجرام</title>
+<style>
+:root{
+  --bg:#0b1020; --card:#141b33; --card2:#1a2340; --accent:#2aabee;
+  --accent2:#5cc8ff; --gold:#ffd166; --text:#eef2ff; --muted:#9aa7c7;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,Arial,sans-serif}
+body{background:radial-gradient(1200px 600px at 80% -10%,#18244a 0%,var(--bg) 55%);color:var(--text);line-height:1.8}
+a{text-decoration:none;color:inherit}
+.container{max-width:1100px;margin:auto;padding:0 20px}
+header{padding:18px 0;position:sticky;top:0;background:rgba(11,16,32,.85);backdrop-filter:blur(10px);z-index:10;border-bottom:1px solid #232f55}
+.nav{display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px;font-size:22px;font-weight:800}
+.logo .mark{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7b5cff);display:grid;place-items:center;font-size:20px}
+.btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--accent),#1d8fd1);color:#fff;padding:12px 26px;border-radius:12px;font-weight:700;font-size:16px;box-shadow:0 8px 24px rgba(42,171,238,.35);transition:.25s;border:none;cursor:pointer}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(42,171,238,.5)}
+.btn-outline{background:transparent;border:2px solid var(--accent);box-shadow:none}
+.hero{padding:90px 0 60px;text-align:center}
+.badge{display:inline-block;background:#1c2748;color:var(--accent2);padding:6px 18px;border-radius:50px;font-size:14px;font-weight:600;margin-bottom:20px}
+.hero h1{font-size:clamp(30px,5vw,52px);line-height:1.4;margin-bottom:18px}
+.hero h1 span{color:var(--accent)}
+.hero p{color:var(--muted);max-width:640px;margin:0 auto 30px;font-size:18px}
+.stats{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;margin:40px 0}
+.stat b{display:block;font-size:28px;color:var(--accent2)}
+.stat span{color:var(--muted);font-size:14px}
+.ticker-wrap{overflow:hidden;border-block:1px solid #232f55;padding:12px 0;background:#0e1529}
+.ticker{display:flex;gap:36px;white-space:nowrap;animation:scroll 22s linear infinite;width:max-content;color:var(--muted);font-size:15px;padding-inline-start:36px}
+@keyframes scroll{to{transform:translateX(50%)}}
+section{padding:70px 0}
+.sec-title{text-align:center;margin-bottom:12px;font-size:32px}
+.sec-sub{text-align:center;color:var(--muted);margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+.card{background:linear-gradient(180deg,var(--card),var(--card2));border:1px solid #26335e;border-radius:18px;padding:26px;display:flex;flex-direction:column;gap:14px;transition:.25s;position:relative}
+.card:hover{transform:translateY(-6px);border-color:var(--accent)}
+.tag{position:absolute;top:14px;left:14px;background:var(--gold);color:#222;font-size:12px;font-weight:700;padding:3px 12px;border-radius:50px}
+.card h3{font-size:20px}
+.card .cat{color:var(--accent2);font-size:13px;font-weight:600}
+.card p{color:var(--muted);font-size:15px}
+.card ul{list-style:none;color:var(--muted);font-size:14px}
+.card li::before{content:"✓ ";color:#4ade80;font-weight:700}
+.price{font-size:22px;font-weight:800;color:var(--gold)}
+.price small{font-size:13px;color:var(--muted);font-weight:400}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;counter-reset:s}
+.step{background:var(--card);border:1px solid #26335e;border-radius:18px;padding:28px;text-align:center}
+.step::before{counter-increment:s;content:counter(s,decimal-leading-zero);display:block;font-size:36px;font-weight:800;color:var(--accent);margin-bottom:12px}
+.step h4{margin-bottom:8px}
+.step p{color:var(--muted);font-size:14px}
+details{background:var(--card);border:1px solid #26335e;border-radius:14px;margin-bottom:12px;padding:18px 22px}
+summary{cursor:pointer;font-weight:700}
+details p{color:var(--muted);margin-top:10px;font-size:15px}
+.cta{text-align:center;background:linear-gradient(135deg,#141f42,#1b2a55);border-radius:24px;padding:60px 30px;border:1px solid #2b3b6e}
+.cta h2{font-size:30px;margin-bottom:14px}
+.cta p{color:var(--muted);margin-bottom:26px}
+.disclaimer{background:#101830;border:1px solid #2b3b6e;border-radius:16px;padding:20px 26px;color:var(--muted);font-size:13px;margin-top:40px;text-align:center}
+footer{text-align:center;padding:30px;color:var(--muted);font-size:14px;border-top:1px solid #232f55}
+.float-tg{position:fixed;bottom:22px;left:22px;width:56px;height:56px;border-radius:50%;background:var(--accent);display:grid;place-items:center;box-shadow:0 10px 28px rgba(42,171,238,.5);z-index:20;transition:.25s}
+.float-tg:hover{transform:scale(1.1)}
+@media(max-width:640px){.nav{flex-wrap:wrap;gap:12px;justify-content:center;text-align:center}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="logo"><span class="mark">🎵</span> ميوزك ستور</div>
+    <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;justify-content:center"><a class="btn btn-outline" href="#extra-services">خدمات إضافية</a><a class="btn btn-outline" href="#ton">بيع تون</a><a class="btn" href="https://t.me/rvvvrvvv" target="_blank">اطلب عبر تيليجرام</a></div>
+  </div>
+</header>
+
+<section class="hero" style="padding-top:70px">
+  <div class="container">
+    <span class="badge">متجر منتجات رقمية — تيليجرام</span>
+    <h1>حسابات وهدايا <span>تيليجرام</span> بثقة.</h1>
+    <p>كل ما تحتاجه لعالم تيليجرام في مكان واحد: حسابات موثوقة، اشتراكات بريميوم، نجوم، وهدايا NFT حصرية — بأسعار واضحة وتسليم فوري.</p>
+    <a class="btn" href="https://t.me/rvvvrvvv" target="_blank">🚀 اطلب الآن</a>
+    <div class="stats">
+      <div class="stat"><b>+1200</b><span>طلب مكتمل</span></div>
+      <div class="stat"><b>24/7</b><span>دعم متواصل</span></div>
+      <div class="stat"><b>5 دقائق</b><span>متوسط التسليم</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker-wrap"><div class="ticker">
+  <span>دفع آمن</span><span>تسليم فوري</span><span>هدية مع أول طلب</span><span>حسابات قديمة وموثوقة</span><span>اشتراكات بريميوم</span><span>نجوم تيليجرام</span><span>هدايا NFT حصرية</span><span>أسماء مستخدمين مميزة</span><span>قنوات جاهزة</span><span>تسليم فوري وآمن</span><span>هدية مجانية مع أول طلب</span><span>حسابات قديمة وموثوقة</span><span>اشتراكات بريميوم</span><span>نجوم تيليجرام</span><span>هدايا NFT حصرية</span><span>أسماء مستخدمين مميزة</span><span>قنوات جاهزة</span><span>تسليم فوري وآمن</span><span>دفع آمن</span><span>تسليم فوري</span><span>هدية مع أول طلب</span><span>حسابات قديمة وموثوقة</span><span>اشتراكات بريميوم</span><span>نجوم تيليجرام</span><span>هدايا NFT حصرية</span><span>أسماء مستخدمين مميزة</span><span>قنوات جاهزة</span><span>تسليم فوري وآمن</span>
+</div></div>
+
+<section>
+  <div class="container">
+    <h2 class="sec-title">الكتالوج</h2>
+    <p class="sec-sub">اختر ما يناسبك، واضغط زر الطلب ليصلك ردنا على تيليجرام مباشرة.</p>
+    <div class="grid">
+
+      <div class="card">
+        <span class="tag">نادر • الأكثر طلباً</span>
+        <div class="cat">حسابات</div>
+        <h3>حساب تيليجرام قديم</h3>
+        <p>حساب أصلي بتاريخ إنشاء قديم، ثقة أعلى وقيود أقل.</p>
+        <ul><li>تاريخ إنشاء موثّق</li><li>جاهز للاستخدام فوراً</li><li>بدون قيود أو حظر</li><li>بيانات الدخول كاملة</li></ul>
+        <div class="price">ابدأ من 15$ <small>حسب العمر والجودة</small></div>
+        <a class="btn" href="https://t.me/rvvvrvvv" target="_blank">اطلب الآن</a>
+      </div>
+
+      <div class="card">
+        <div class="cat">حسابات</div>
+        <h3>حساب برقم أمريكي +1</h3>
+        <p>حساب مسجّل برقم أمريكي افتراضي، مثالي للخصوصية.</p>
+        <ul><li>رقم +1 أمريكي</li><li>تفعيل فوري</li><li>ضمان استبدال 24 ساعة</li></ul>
+        <div class="price">12$ <small>للحساب الواحد</small></div>
+        <a class="btn" href="https://t.me/rvvvrvvv" target="_blank">اطلب الآن</a>
+      </div>
+
+      <div class="card">
+        <span class="tag">الأكثر طلباً</span>
+        <div class="cat">بريميوم ونجوم</div>
+        <h3>تيليجرام بريميوم 3 أشهر</h3>
+        <p>ترقية حسابك إلى تيليجرام بريميوم لمدة 3 أشهر كاملة.</p>
+        <ul><li>رفع ملفات 4GB</li><li>بدون إعلانات</li><li>ملصقات وردود حصرية</li><li>شارة بريميوم</li></ul>
+        <div class="price">9$ <small>بدلاً من 12$</small></div>
+        <a class="btn" href="https://t.me/rvvvrvvv" target="_blank">اطلب الآن</a>
+      </div>
+
+      <div class="card">
+        <span class="tag">الأكثر توفيراً</span>
+        <div class="cat">بريميوم ونجوم</div>
+        <h3>تيليجرام بريميوم 12 شهراً</h3>
+        <p>أفضل قيمة — بريميوم لمدة 12 شهراً بسعر مخفّض.</p>
+        <ul><li>كل مزايا البريميوم</li><li>توفير 27%</li><li>تفعيل خلال دقائق</li><li>هدية مجانية مع الطلب</li></ul>
+        <div class="price">26$ <small>بدلاً من 36$</small></div>
+        <a class="btn" href="https://t.me/rvvvrvvv" target="_blank">اطلب الآن</a>
+      </div>
+
+      <div class="card">
+        <div class="cat">بريميوم ونجوم</div>
+        <h3>شحن نجوم تيليجرام</h3>
+        <p>شحن نجوم تيليجرام مباشرة إلى حسابك بأمان.</p>
+        <ul><li>شحن رسمي وآمن</li><li>تصل خلال دقائق</li><li>كميات مخصصة متاحة</li></ul>
+        <div class="price">ابدأ من 1$ <small>حسب الكمية</small></div>
+        <a class="btn" href="https://t.me/rvvvrvvv" target="_blank">اطلب الآن</a>
+      </div>
+
+      <div class="card">
+        <span class="tag">جديد • الأكثر طلباً</span>
+        <div class="cat">هدايا</div>
+        <h3>هدايا NFT رسمية</h3>
+        <p>هدية NFT رسمية قابلة للارتداء والتداول داخل تيليجرام.</p>
+        <ul><li>هدايا محدودة الإصدار</li><li>قابلة للترقية والتداول</li><li>تظهر على ملفك الشخصي</li></ul>
+        <div class="price">ابدأ من 5$ <small>حسب الهدية</small></div>
+        <a class="btn" href="https://t.me/rvvvrvvv" target="_blank">اطلب الآن</a>
+      </div>
+
+      <div class="card">
+        <div class="cat">هدايا</div>
+        <h3>باقة هدايا عشوائية</h3>
+        <p>مفاجأة! باقة هدايا عشوائية قد تتضمن هدايا نادرة.</p>
+        <ul><li>3–5 هدايا في الباقة</li><li>فرصة لهدية نادرة</li><li>تسليم فوري</li></ul>
+        <div class="price">12$ <small>باقة اقتصادية</small></div>
+        <a class="btn" href="https://t.me/rvvvrvvv" target="_blank">اطلب الآن</a>
+      </div>
+
+      <div class="card">
+        <div class="cat">خدمات</div>
+        <h3>اسم مستخدم مميز</h3>
+        <p>اسم مستخدم قصير ومميز لحسابك أو قناتك.</p>
+        <ul><li>أسماء 4–6 أحرف</li><li>ملكية كاملة وقانونية</li><li>نقل آمن عبر Fragment</li></ul>
+        <div class="price">ابدأ من 20$ <small>حسب الاسم</small></div>
+        <a class="btn" href="https://t.me/rvvvrvvv" target="_blank">اطلب الآن</a>
+      </div>
+
+      <div class="card">
+        <div class="cat">خدمات</div>
+        <h3>قنوات جاهزة</h3>
+        <p>قناة جاهزة باسم مميز وإعدادات احترافية كاملة.</p>
+        <ul><li>اسم ووصف احترافي</li><li>إعدادات خصوصية مضبوطة</li><li>نقل الإشراف فوراً</li></ul>
+        <div class="price">ابدأ من 8$ <small>حسب القناة</small></div>
+        <a class="btn" href="https://t.me/rvvvrvvv" target="_blank">اطلب الآن</a>
+      </div>
+
+      <div class="card">
+        <span class="tag">مجاني</span>
+        <div class="cat">هدايا</div>
+        <h3>هدية مع أول طلب 🎁</h3>
+        <p>هدية مجانية لكل عميل جديد مع أول طلب من المتجر.</p>
+        <ul><li>مجانية 100%</li><li>مع أول عملية شراء</li><li>كمية محدودة يومياً</li></ul>
+        <div class="price">مجاناً <small>مع أول طلب</small></div>
+        <a class="btn" href="https://t.me/rvvvrvvv" target="_blank">اطلب الآن</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="extra-services">
+  <div class="container">
+    <h2 class="sec-title">تمويل ورشق</h2>
+    <p class="sec-sub">تمويل ألعاب وورشق حسابات — كلها بضمان وتسليم فوري.</p>
+    <div class="grid">
+
+      <div class="card">
+        <span class="tag">الأكثر طلباً</span>
+        <div class="cat">تمويل</div>
+        <h3>تمويل ألعاب 🎮</h3>
+        <p>شحن ورصيد لجميع الألعاب الشهيرة بأرخص الأسعار وتسليم فوري.</p>
+        <ul><li>شدات ببجي UC</li><li>جواهر فري فاير</li><li>فورتنايت V-Bucks</li><li>شحن عبر ID بأمان</li></ul>
+        <div class="price">ابدأ من 1$ <small>حسب اللعبة والكمية</small></div>
+        <a class="btn" href="https://t.me/rvvvrvvv" target="_blank">اطلب الآن</a>
+      </div>
+
+      <div class="card">
+        <span class="tag">تفاعل فوري</span>
+        <div class="cat">ورشق</div>
+        <h3>ورشق متابعين وتفاعل 📈</h3>
+        <p>زيادة متابعين ومشاهدات وتفاعل لحساباتك وقنواتك بجودة عالية.</p>
+        <ul><li>متابعين تيليجرام وانستقرام وتيك توك</li><li>مشاهدات ولايكات</li><li>بدون حظر أو خسارة</li><li>تنفيذ خلال دقائق</li></ul>
+        <div class="price">ابدأ من 2$ <small>حسب الكمية</small></div>
+        <a class="btn" href="https://t.me/rvvvrvvv" target="_blank">اطلب الآن</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="container">
+    <h2 class="sec-title">تعزيزات</h2>
+    <p class="sec-sub">عزّز حسابك في ألعابك المفضلة بمساعدة محترفين — رفع رانك ومستوى بأمان تام.</p>
+    <div class="grid">
+
+      <div class="card">
+        <span class="tag">الأكثر طلباً</span>
+        <div class="cat">تعزيزات ألعاب</div>
+        <h3>تعزيز حسابات الألعاب ⚔️</h3>
+        <p>رفع مستوى ورانك حسابك في أشهر الألعاب بيد محترفين بخبرة طويلة.</p>
+        <ul><li>رفع رانك بجميع الألعاب</li><li>إنجازات ومكافآت حصرية</li><li>بدون برامج مخالفة</li><li>ضمان كامل للحساب</li></ul>
+        <div class="price">ابدأ من 10$ <small>حسب اللعبة والرتبة</small></div>
+        <a class="btn" href="https://t.me/rvvvrvvv" target="_blank">اطلب الآن</a>
+      </div>
+
+      <div class="card">
+        <div class="cat">تعزيزات ألعاب</div>
+        <h3>إتمام مهام وتحديات 🎯</h3>
+        <p>إنجاز المهمات اليومية والموسمية والتحديات الصعبة نيابة عنك.</p>
+        <ul><li>مهام الموسم كاملة</li><li>أحداث وتحديات محدودة</li><li>تقدم يومي مضمون</li><li>تقرير بعد كل مهمة</li></ul>
+        <div class="price">ابدأ من 5$ <small>حسب عدد المهام</small></div>
+        <a class="btn" href="https://t.me/rvvvrvvv" target="_blank">اطلب الآن</a>
+      </div>
+
+      <div class="card">
+        <div class="cat">تعزيزات ألعاب</div>
+        <h3>بناء حساب من الصفر 🏗️</h3>
+        <p>نبني لك حساباً قوياً من الصفر بإعدادات احترافية وتجهيز كامل.</p>
+        <ul><li>تجهيز كامل للحساب</li><li>فتح شخصيات وأسلحة</li><li>إعدادات احترافية</li><li>تسليم جاهز للعب</li></ul>
+        <div class="price">ابدأ من 15$ <small>حسب الطلب</small></div>
+        <a class="btn" href="https://t.me/rvvvrvvv" target="_blank">اطلب الآن</a>
+      </div>
+
+      <div class="card">
+        <span class="tag">جديد</span>
+        <div class="cat">تعزيزات تيليجرام</div>
+        <h3>بيع تعزيزات تيليجرام 🚀</h3>
+        <p>تعزيزات رسمية لقنواتك ومجموعاتك لرفعها في نتائج البحث وزيادة ظهورها.</p>
+        <ul><li>تعزيز قنوات ومجموعات</li><li>رفع ترتيب القناة في البحث</li><li>تعزيزات رسمية وآمنة</li><li>تنفيذ خلال دقائق</li></ul>
+        <div class="price">ابدأ من 4$ <small>حسب عدد التعزيزات</small></div>
+        <a class="btn" href="https://t.me/rvvvrvvv" target="_blank">اطلب الآن</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="ton">
+  <div class="container">
+    <h2 class="sec-title">بيع تون</h2>
+    <p class="sec-sub">حسابات وشحن ورصيد تون — تسليم فوري وأسعار منافسة.</p>
+    <div class="grid">
+
+      <div class="card">
+        <span class="tag">الأكثر طلباً</span>
+        <div class="cat">تون</div>
+        <h3>حسابات تون جاهزة 🔥</h3>
+        <p>حسابات تون جاهزة ومجهزة بمستويات ومحتوى مميز، تسليم فوري.</p>
+        <ul><li>مستويات عالية متوفرة</li><li>محتوى وإضافات مميزة</li><li>بيانات دخول كاملة</li><li>ضمان استبدال</li></ul>
+        <div class="price">ابدأ من 10$ <small>حسب مستوى الحساب</small></div>
+        <a class="btn" href="https://t.me/rvvvrvvv" target="_blank">اطلب الآن</a>
+      </div>
+
+      <div class="card">
+        <div class="cat">تون</div>
+        <h3>شحن تون 💎</h3>
+        <p>شحن عملة ورصيد تون مباشرة لحسابك بأمان وسرعة.</p>
+        <ul><li>شحن رسمي وآمن</li><li>يصل خلال دقائق</li><li>كميات مخصصة متاحة</li><li>بدون حظر</li></ul>
+        <div class="price">ابدأ من 1$ <small>حسب الكمية</small></div>
+        <a class="btn" href="https://t.me/rvvvrvvv" target="_blank">اطلب الآن</a>
+      </div>
+
+      <div class="card">
+        <div class="cat">تون</div>
+        <h3>رصيد تون وهدايا 🎁</h3>
+        <p>رصيد وهدايا وباقات تون المتنوعة بأفضل الأسعار.</p>
+        <ul><li>باقات متنوعة</li><li>هدايا مجانية مع الطلب</li><li>تسليم فوري</li><li>دعم مستمر</li></ul>
+        <div class="price">ابدأ من 3$ <small>حسب الباقة</small></div>
+        <a class="btn" href="https://t.me/rvvvrvvv" target="_blank">اطلب الآن</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="sec-title">خطوات بسيطة</h2>
+    <p class="sec-sub">من التصفح إلى الاستلام في دقائق.</p>
+    <div class="steps">
+      <div class="step"><h4>اختر منتجك</h4><p>تصفّح الكتالوج وحدّد المنتج المناسب لك من حسابات، بريميوم، نجوم أو هدايا.</p></div>
+      <div class="step"><h4>اضغط زر الطلب</h4><p>سيُفتح محادثة معنا مباشرة على تيليجرام مع اسم المنتج جاهزاً.</p></div>
+      <div class="step"><h4>أكّد الدفع</h4><p>نوفر طرق دفع متعددة وآمنة، ونؤكد طلبك فور استلام المبلغ.</p></div>
+      <div class="step"><h4>استلم طلبك</h4><p>يتم تسليم معظم المنتجات خلال دقائق، مع ضمان الاستبدال عند أي مشكلة.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container" style="max-width:760px">
+    <h2 class="sec-title">الأسئلة الشائعة</h2>
+    <p class="sec-sub">جمعنا أكثر الأسئلة تكراراً من عملائنا. إن لم تجد إجابتك هنا، فريقنا متواجد على تيليجرام على مدار الساعة.</p>
+    <details><summary>كيف أطلب من المتجر؟</summary><p>اضغط زر «اطلب الآن» على المنتج، وسيُفتح تليجرام مباشرة على حسابنا مع تفاصيل طلبك.</p></details>
+    <details><summary>هل التسليم فوري؟</summary><p>نعم، متوسط وقت التسليم 5 دقائق بعد تأكيد الدفع.</p></details>
+    <details><summary>ما هي طرق الدفع المتاحة؟</summary><p>نوفر طرق دفع متعددة وآمنة — اسألنا على تليجرام لمعرفة الطريقة الأنسب لك.</p></details>
+    <details><summary>هل يوجد ضمان؟</summary><p>نعم، نقدم ضمان استبدال للحسابات والضمان 24 ساعة حسب المنتج.</p></details>
+    <details><summary>هل أحصل على هدية مع أول طلب؟</summary><p>نعم، كل عميل جديد يحصل على هدية مجانية مع أول طلب، بكمية محدودة يومياً.</p></details>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta">
+      <h2>جاهز تطلب؟ 🎧</h2>
+      <p>فريق ميوزك ستور بانتظارك على تيليجرام — رد سريع وتسليم فوري.</p>
+      <a class="btn" href="https://t.me/rvvvrvvv" target="_blank">اطلب عبر تيليجرام</a>
+    </div>
+    <div class="disclaimer">
+      <b>إخلاء مسؤولية:</b> الأسعار المعروضة استرشادية وقد تتغير حسب السوق والتوفر. بعض الخدمات (مثل الورشق وبيع الحسابات) قد تخالف شروط استخدام المنصات المعنية، ويتحمل العميل مسؤولية استخدامها وفق أنظمة بلده وشروط المنصة. ميوزك ستور وسيط بيع فقط.
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 ميوزك ستور — جميع الحقوق محفوظة</p>
+    <p>للتواصل: <a href="https://t.me/rvvvrvvv" target="_blank" style="color:var(--accent2)">t.me/rvvvrvvv</a></p>
+  </div>
+</footer>
+
+<a class="float-tg" href="https://t.me/rvvvrvvv" target="_blank" title="اطلب عبر تيليجرام" aria-label="تليجرام">
+  <svg viewBox="0 0 24 24" width="28" height="28" fill="#fff"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.5.5 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+</a>
+
+</body>
+</html>
